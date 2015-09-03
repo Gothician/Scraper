@@ -4,10 +4,10 @@ Created on Sat Aug 29 16:31:26 2015
 
 @author: gothician
 """
-import urllib3 # подключили библиотеку urllib
+import urllib # подключили библиотеку urllib
 import lxml.html # подключили библиотеку lxml
 # Открываем ГТ
-page = urllib3.request.urlopen("http://geektimes.ru/all")
+page = urllib.request.urlopen("http://geektimes.ru/all")
 # Получаем HTML-код главной страницы
 doc = lxml.html.document_fromstring(page.read())
 # Выбираем посты
